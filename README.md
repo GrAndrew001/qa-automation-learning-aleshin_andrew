@@ -1,1 +1,1 @@
-# qa-automation-learning-aleshin_andrew
+Тут лежит мое творение в виде теркера расходов
