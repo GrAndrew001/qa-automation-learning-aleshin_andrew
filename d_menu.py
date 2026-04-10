@@ -29,7 +29,7 @@ class Menu:
         else:
             print("Не удалось добавить расход.")
 
-    def show_all_flow(self):
+    def display_all_expenses(self):
 
         print("\nВсе расходы")
 
@@ -76,7 +76,7 @@ class Menu:
             print(f"Расходов в категории '{category}' не найдено")
 
     def run(self):
-        """Запускает программу"""
+
         while True:
             self.show_menu()
             choice = input("Выберите действие: ")
@@ -84,7 +84,7 @@ class Menu:
             if choice == "1":
                 self.add_expense_flow()
             elif choice == "2":
-                self.show_all_flow()
+                self.display_all_expenses()
             elif choice == "3":
                 self.show_by_category_flow()
             elif choice == "4":
