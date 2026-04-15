@@ -17,6 +17,7 @@ def tracker_with_expenses():
 
 
 def test_add_expense_success(empty_tracker):
+
     result = empty_tracker.add_expense("Еда", 500, "Обед")
 
     assert result == True
@@ -24,7 +25,7 @@ def test_add_expense_success(empty_tracker):
 
 
 def test_add_expense_invalid_amount(empty_tracker):
-    """Тест 3: Добавление с отрицательной суммой должно вернуть False"""
+
     result = empty_tracker.add_expense("Еда", -100, "Обед")
 
     assert result == False
