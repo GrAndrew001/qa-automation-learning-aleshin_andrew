@@ -55,4 +55,3 @@ def test_get_expenses_by_category(tracker_with_expenses, category, expected_coun
 
     assert len(filtered) == expected_count
     assert total == expected_total
-
